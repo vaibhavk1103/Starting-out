@@ -10,7 +10,13 @@ def ncov():                                                                     
     try:
         print(covid.get_status_by_country_name(
             input("Enter the name of the country for which you want the current details: ")))                   # Function to get details of a specific country.
-        print("\n\nStay indoors and always wear protective gear when stepping out into public areas.\n\n")      # Caution message.
+        print("\n\nClean your hands often. Use soap and water, or an alcohol-based hand rub.\n"                       # Caution message.
+                "Maintain a safe distance from anyone who is coughing or sneezing.\n"
+                "Wear a mask when physical distancing is not possible.\n"
+                "Don’t touch your eyes, nose or mouth.\n"
+                "Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.\n"
+                "Stay home if you feel unwell.\n"
+                "If you have a fever, cough and difficulty breathing, seek medical attention.\n")
         print("All statistics have been verified and are sourced from https://www.worldometers.info/")
     except:
         print("Please input a valid country or check your spelling.")                                           # Error message.
